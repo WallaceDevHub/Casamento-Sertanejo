@@ -1,0 +1,491 @@
+/* Estilos Gerais */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    
+    background-color: #592608;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 15vh;
+}
+
+.links {
+    
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 35px;
+    font-weight: bold;
+}
+
+a:hover {
+    border-bottom: 2px solid #BFA084;
+    transition: transform 0.5s;
+}
+
+.logo {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 65px;
+}
+
+.icon {
+    
+    color: white;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+#logo-site {
+    
+    height: 100%;
+}
+
+.titulo {
+    
+    font-family: Dancing Script, sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 769px) {
+    .navbar .container {
+        display: flex;
+        
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .links {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .logo {
+        margin: 10px 0;
+        height: 50px;
+    }
+
+    #logo-site{
+        margin-right: 35px;
+    }
+
+    .icon {
+        margin: 10px 25px 10px 0;
+        
+    }
+
+    .titulo {
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Fim - NAVBAR */
+
+/* Header */
+.container-header {
+    height: 70vh;
+    background-image: url("../img/casamento-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80% 80%;
+}
+
+.container-header-components {
+    height: 100%; /* Ajustado para 100% para ocupar toda a altura do header */
+    display: flex;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0) 100%);
+}
+
+.container-header-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    gap: 10px;
+}
+
+hr {
+    width: 65%;
+}
+
+.elemento {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    margin-top: -45px;
+}
+
+#elemento2 {
+    transform: rotate(180deg);
+    margin-top: -10px;
+}
+
+.container-header-texto-h1 {
+    font-family: Dancing Script, sans-serif;
+    font-size: 50px;
+    margin-top: -10px;
+    color: white;
+    margin-bottom: -1px;
+}
+
+.container-header-texto-h3 {
+    color: white;
+    margin-bottom: -25px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-header {
+        height: 60vh; /* Reduz a altura do cabeçalho em telas menores */
+    }
+
+    .container-header-texto-h1 {
+        font-size: 30px; /* Reduz o tamanho da fonte do título */
+    }
+
+    .elemento {
+        width: 80%; /* Ajusta a largura da imagem para 80% do contêiner */
+        margin-top: -30px; /* Ajusta a margem para melhor alinhamento */
+    }
+
+    hr {
+        width: 80%; /* Ajusta a largura da linha horizontal */
+    }
+
+    .container-header-texto-h3 {
+        font-size: 14px; /* Ajusta o tamanho da fonte do subtítulo */
+    }
+}
+
+@media (max-width: 480px) {
+    .container-header {
+        height: 40vh; /* Reduz ainda mais a altura do cabeçalho em telas muito pequenas */
+    }
+
+    .container-header-texto-h1 {
+        font-size: 28px; /* Reduz o tamanho da fonte do título */
+    }
+
+    .elemento {
+        width: 90%; /* Ajusta a largura da imagem para 90% do contêiner */
+    }
+
+    .container-header-texto-h3 {
+        font-size: 16px; /* Ajusta o tamanho da fonte do subtítulo */
+    }
+}
+/* Fim - Header */
+
+/* Section 01 */
+.sessao01 {
+    height: 70vh;
+    margin: 0 auto;
+}
+
+#imagens-casamento {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens se movam para a linha seguinte se não houver espaço */
+    justify-content: center; /* Centraliza das imagens */
+    border-radius: 8px;
+}
+
+.sessao01-h1 {
+    text-align: center;
+}
+
+.img01 {
+    margin: 0 15px; /* Ajuste a margem para um espaçamento mais uniforme */
+    width: 30%; /* Ajuste a largura para permitir mais imagens em telas maiores */
+    margin-top: 25px;
+}
+
+.imagens {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Mantém a proporção da imagem */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sessao01{
+        margin-bottom: 400px;
+    }
+    .img01 {
+        width: 45%; /* Ajusta a largura para telas menores */
+        margin: 10px 0; /* Reduz a margem lateral e adiciona margem vertical */
+    }
+
+    #imagens-casamento {
+         /* Para visualização, pode ser removido */
+        flex-direction: column; /* Organiza os itens em coluna */
+        display: flex;
+        align-items: center; /* Centraliza os itens horizontalmente */
+        justify-content: center; /* Centraliza os itens verticalmente */
+        margin: 0 auto; /* Centraliza o contêiner */
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sessao01{
+        margin-bottom: 400px;
+    }
+    .img01 {
+        width: 90%; /* Ajusta a largura para ocupar mais espaço em telas muito pequenas */
+        margin: 10px 0; /* Margem vertical para melhor espaçamento */
+    }
+}
+
+
+/* Fim - Section 01 */
+
+/* Section 02 */
+.sessao02 {
+    
+    text-align: center; /* Centraliza o texto */
+    width: 80%;
+    margin: 40px auto; /* Centraliza a seção na página */
+}
+
+.sessao01-h1 {
+    font-size: 2.5em; /* Tamanho do título */
+    color: #592608; /* Cor do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.descricao {
+    font-size: 1.2em; /* Tamanho do texto descritivo */
+    color: #333; /* Cor do texto */
+    margin-bottom: 30px; /* Espaçamento abaixo do texto descritivo */
+}
+
+.form-container {
+    display: flex; /* Usar flexbox para alinhar os elementos */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+.email-input {
+    width: 80%; /* Largura do campo de entrada */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 1em; /* Tamanho da fonte */
+    border: 1px solid #ccc; /* Borda do campo */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-bottom: 20px; /* Espaçamento abaixo do campo */
+}
+
+.enviar-btn {
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 1em; /* Tamanho da fonte do botão */
+    color: white; /* Cor do texto do botão */
+    background-color: #592608; /* Cor de fundo do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s; /* Transição suave para efeitos */
+}
+
+.enviar-btn:hover {
+    background-color: #7a4a3a; /* Cor do botão ao passar o mouse */
+}
+
+/* Responsividade */
+
+
+@media (max-width: 768px) {
+    .sessao02 {
+        width: 90%; 
+        margin-top: 200px;/* Aumenta a largura da seção em telas menores */
+    }
+
+    .sessao01-h1 {
+    font-size: 2em; /* Reduz o tamanho da fonte do título */
+    }
+
+    .descricao {
+        font-size: 1em; /* Reduz o tamanho da fonte do texto descritivo */
+    }
+
+    .email-input {
+        width: 90%; /* Aumenta a largura do campo de entrada */
+    }
+}
+
+@media (max-width: 480px) {
+    .sessao02 {
+        width: 95%; /* Aumenta ainda mais a largura da seção em telas muito pequenas */
+    }
+
+    .sessao01-h1 {
+        font-size: 1.8em; /* Reduz o tamanho da fonte do título */
+    }
+
+    .descricao {
+        font-size: 0.9em; /* Reduz o tamanho da fonte do texto descritivo */
+    }
+
+    .email-input {
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    .enviar-btn {
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+}
+
+
+/* Fim- Section 02 */
+
+/* Footer */
+.footer {
+    display: flex; /* Usar flexbox para o layout do footer */
+    height: 15vh;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaça os itens para as extremidades */
+    padding: 20px; /* Adiciona um pouco de espaço ao redor */
+    background-color: #592608; /* Cor de fundo do footer */
+    color: white; /* Cor do texto */
+}
+
+
+
+.icones {
+   
+    display: flex; /* Usar flexbox para alinhar os ícones em linha */
+    flex-direction: column; /* Organiza os ícones em coluna */
+    align-items: center; /* Centraliza os ícones horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    position: absolute; /* Permite que a div icones seja centralizada */
+    left: 50%; /* Move a div para o meio da tela */
+    transform: translateX(-50%); /* Ajusta a posição para centralizar */
+}
+
+.redes-sociais {
+    display: flex; /* Usar flexbox para alinhar os ícones em linha */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    align-items: center; /* Alinha os ícones verticalmente */
+    margin-top: 10px; /* Espaçamento acima dos ícones */
+}
+
+.redes-sociais svg {
+    color: white; /* Define a cor dos ícones como branca */
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: transform 0.3s; /* Transição suave para efeitos */
+}
+
+.redes-sociais svg:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
+}
+
+#logo-site-footer {
+    height: auto; /* Ajusta a altura da logo */
+    max-height: 80%; /* Limita a altura máxima da logo */
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .footer{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background: #333;
+        top: 60px;
+        left: 0;
+        padding: 20px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+
+   
+    #titulo-footer{
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    .contatos {
+        display: none;
+    }
+
+    .icones{
+        margin-top: 150px;
+    }
+}
+
